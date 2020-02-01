@@ -69,7 +69,7 @@ export const deletePost = id => async dispatch => {
 
     dispatch({
       type: DELETE_POST,
-      payload: { id }
+      payload: id
     });
 
     dispatch(setAlert('Post removed', 'success'));
